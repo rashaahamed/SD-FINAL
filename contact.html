@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact | Rasha Ahamed</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+        <link rel="stylesheet" href="stylesheet.css">
+        <!--Link to Alice font-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+        <!--Link to Poppins font-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+    <header>
+        <!--Navigation Bar-->
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li class="current"><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+    <body>
+        <main>
+            <!--Title Section-->
+            <div id="w-body-styling">
+                <div class="bounce-text">
+                    <h1>Contact Me</h1>
+                    <p>Need to tell me something? Talk to me here.</p>
+                </div>
+                <!--Button to open form-->
+                <button class="open-btn" id="openBtn" onclick="openForm()">Open Form</button>
+                    <div class="contact-form" id="myForm">
+                    <form action="contact.html">
+                        <div class="input-fields">
+                            <!--Input fields for the form-->
+                            <input type="text" class="input" placeholder="Name" required>
+                            <input type="text" class="input" placeholder="Last Name" required>
+                            <input type="email" class="input" placeholder="Email" required>
+                        </div>
+                        <!--Message Box to send personal message-->
+                        <div class="msg">
+                            <textarea id="msg-box" placeholder="Message" maxlength="500"></textarea>
+                            <a href="contact.html">
+                        <div class="btn">Send Message</div></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--Previous page Next page box-->
+        <div class="continue">
+            <div class="continue-container">
+                <div class="continue-left">
+                    <span class="next-text">Prev</span>
+                    <a href="work.html">
+                    <span class="line-deco">Work</span></a>
+                </div>
+            </div>
+            <div class="continue-container">
+                <div class="continue-right">
+                    <span class="prev-text">Back</span>
+                    <a href="index.html">
+                    <span class="line-deco">Home</span></a>
+                </div>
+            </div>
+        </div>
+        </main>
+        <script>
+            /* JS code to display form when openForm button is clicked */
+            function openForm() {
+                document.getElementById("myForm").style.display = "flex";
+            }
+        </script>
+    </body>
+</html>
